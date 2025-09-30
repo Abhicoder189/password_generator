@@ -28,10 +28,11 @@ function App() {
   },[length,numberAllowed,charAllowed])
 
   return (
-    <>
-     <h1 className='bg-red-500'>Password Genrator</h1>
+    <div className=' '>
+    <div className='outline-2 rounded-full p-10'>
+     <h1 className=''>Password Genrator</h1>
      <div className=''>
-      <input type="text" name="" value={password} className='' placeholder='password' readOnly id="" />
+      <input type="text" name="" className="outline-2 outline-green-700 rounded-md m-5 " value={password}  placeholder='password' readOnly id="" />
       <button className=''onClick={copyPassword}>Copy</button>
 
      </div>
@@ -41,7 +42,7 @@ function App() {
           <label htmlFor="length">Length: {length}</label>
         </div>
          <div className=''>
-          <input type="checkbox" defaultChecked={numberAllowed} onChange={()=>{setNumberAllowed((prev)=>!prev)}} className='cursor-pointer'  name="" id="" />
+          <input type="checkbox" defaultChecked={numberAllowed} onChange={()=>{setNumberAllowed((prev)=>!prev)}} className='cursor-pointer '  name="" id="" />
           <label htmlFor="number">Number</label>
 
         </div>
@@ -51,7 +52,8 @@ function App() {
           
         </div>
       </div>
-    </>
+      </div>
+    </div>
   )
 }
 
