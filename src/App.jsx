@@ -1,6 +1,6 @@
 import { useState,useCallback,useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import './App.css'
 
 function App() {
@@ -32,22 +32,22 @@ function App() {
     <div className='outline-2 rounded-full p-10'>
      <h1 className=''>Password Genrator</h1>
      <div className=''>
-      <input type="text" name="" className="outline-2 outline-green-700 rounded-md m-5 " value={password}  placeholder='password' readOnly id="" />
+      <input type="text" name="" className="outline-2 outline-green-700 rounded-md m-5 " value={password}  placeholder='password' readOnly  />
       <button className=''onClick={copyPassword}>Copy</button>
 
      </div>
       <div className=''>
         <div className=''>
-          <input type="range" min={6} max={100} value={length} className='cursor-pointer' onChange={(e)=>setLength(e.target.value)} name="" id="" />
+          <input type="range" min={6} max={100} value={length} className='cursor-pointer' onChange={(e)=>setLength(e.target.value)}  />
           <label htmlFor="length">Length: {length}</label>
         </div>
          <div className=''>
-          <input type="checkbox" defaultChecked={numberAllowed} onChange={()=>{setNumberAllowed((prev)=>!prev)}} className='cursor-pointer '  name="" id="" />
+          <input type="checkbox" defaultChecked={numberAllowed} onChange={()=>{setNumberAllowed((prev)=>!prev)}} className='cursor-pointer '   />
           <label htmlFor="number">Number</label>
 
         </div>
         <div className=''>
-          <input type="checkbox" defaultChecked={charAllowed} onChange={()=>{setCharAllowed((prev)=>!prev)}}   className='cursor-pointer'  name="" id="" />
+          <input type="checkbox" defaultChecked={charAllowed} onChange={()=>{setCharAllowed((prev)=>!prev)}}   className='cursor-pointer'   />
           <label htmlFor="char">Character</label>
           
         </div>
