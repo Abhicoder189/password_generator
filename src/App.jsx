@@ -28,7 +28,7 @@ function App() {
   },[length,numberAllowed,charAllowed])
 
   return (
-    <div className='flex place-content-center '>
+    <div className=' '>
     <div className='outline-2 rounded-full p-10'>
      <h1 className=''>Password Genrator</h1>
      <div className=''>
